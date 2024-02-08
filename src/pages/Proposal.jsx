@@ -7,12 +7,12 @@ import { propose, qoutes } from '../data/quotes.json';
 import { genRandom } from '../utills';
 
 const Proposal = ({ className = '' }) => {
-    const { id } = useParams();
+    const { id ="Neha Mote 😘" } = useParams();
     const person = id.split('-').join(' ');
 
     const [texts, setTexts] = useState([]);
     const [currentText, setCurrentText] = useState({
-        image: '/images/image-05.webp',
+        image: '/images/1.jpg',
         subtext: 'I want to tell you something',
     });
 
